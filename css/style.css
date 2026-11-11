@@ -1,0 +1,1082 @@
+/* PENGATURAN DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+ body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(
+        120deg,
+        #071b3a,
+        #087eb5,
+        #20b8e8
+    );
+    background-attachment: fixed;
+    color: #17233c;
+    line-height: 1.6;
+}
+}
+
+
+/* NAVIGASI */
+
+/* NAVIGASI */
+header {
+    background: #101d35;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 12px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 27px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar .logo img {
+    display: block;
+    width: 45px;
+    height: 45px;
+    max-width: 45px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.navbar .logo span {
+    color: #35b6e8;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: #35b6e8;
+}
+
+
+/* HERO HOME */
+.hero {
+    min-height: 480px;
+    background: linear-gradient(120deg, #101d35, #174c75);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.subtitle {
+    color: #159fd4;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content > p:not(.subtitle) {
+    color: #dce8f2;
+    margin-bottom: 28px;
+}
+
+.btn {
+    display: inline-block;
+    background: #18a8df;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #087eaf;
+    transform: translateY(-3px);
+}
+
+/* SECTION PRODUK */
+.section {
+    padding: 75px 7%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2,
+.about-content h2,
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.section-title > p:not(.subtitle) {
+    color: #68758a;
+}
+.section {
+    background: linear-gradient(
+        120deg,
+        #dceeff,
+        #b8e4fa,
+        #e0f7ff
+    );
+}
+
+/* KARTU PRODUK */
+.product-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+.product-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: contain;
+    padding: 15px;
+    background: white;
+}
+
+.product-info {
+    padding: 18px;
+}
+
+.product-info h3 {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.product-info p {
+    font-size: 14px;
+    color: #68758a;
+    min-height: 65px;
+}
+
+.product-info h4 {
+    color: #078ac0;
+    font-size: 18px;
+    margin-top: 12px;
+}
+
+.price-note {
+    text-align: center;
+    color: #68758a;
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+/* KEUNGGULAN */
+.advantages {
+    padding: 70px 7%;
+    background: #eaf2f8;
+}
+
+.advantage-container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.advantage-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.advantage-card h3 {
+    color: #087eaf;
+    margin-bottom: 12px;
+}
+
+.advantage-card p {
+    color: #68758a;
+    font-size: 14px;
+}
+
+/* CTA */
+.cta {
+    background: #142b4b;
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.cta h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.cta p {
+    margin-bottom: 25px;
+    color: #dce8f2;
+}
+
+/* ABOUT US */
+.about-hero {
+    background: linear-gradient(120deg, #101d35, #174c75);
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.about-hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.about-hero > p:last-child {
+    color: #dce8f2;
+}
+
+.about-section {
+    padding: 65px 10%;
+    background: white;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.about-content p:not(.subtitle) {
+    color: #59677c;
+    margin-bottom: 15px;
+}
+
+/* VISI DAN MISI */
+.vision-mission {
+    padding: 65px 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.vm-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.vm-card h2 {
+    color: #078ac0;
+    margin-bottom: 18px;
+}
+
+.vm-card p,
+.vm-card li {
+    color: #59677c;
+}
+
+.vm-card ol {
+    padding-left: 22px;
+}
+
+.vm-card li {
+    margin-bottom: 12px;
+}
+
+/* KONTAK */
+.contact {
+    text-align: center;
+    padding: 65px 20px;
+    background: #eaf2f8;
+}
+
+.contact-info {
+    display: inline-block;
+    text-align: left;
+    background: white;
+    padding: 25px 35px;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+    background: #101d35;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* RESPONSIVE TABLET */
+@media (max-width: 900px) {
+    .product-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .advantage-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .vision-mission {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 600px) {
+    .navbar {
+        padding: 15px;
+    }
+
+
+   .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 27px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.logo span {
+    color: #35b6e8;
+}
+    }
+
+    .nav-menu {
+        gap: 15px;
+        font-size: 14px;
+    }
+
+    .hero {
+        min-height: 400px;
+        padding: 55px 25px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .about-hero h1 {
+        font-size: 30px;
+    }
+
+    .section {
+        padding: 50px 20px;
+    }
+
+    .section-title h2,
+    .about-content h2 {
+        font-size: 26px;
+    }
+
+    .product-container {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card img {
+        height: 260px;
+    }
+
+    .advantage-container {
+        grid-template-columns: 1fr;
+    }
+
+    .vision-mission {
+        padding: 40px 20px;
+    }
+
+    .contact-info {
+        padding: 20px;
+        font-size: 14px;
+    }
+
+/* Memastikan gambar logo tidak membesar */
+.navbar .logo img {
+    width: 45px !important;
+    height: 45px !important;
+    max-width: 45px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+.features {
+    background: linear-gradient(
+        135deg,
+        #0b2850,
+        #087eb5,
+        #123e70
+    );
+    color: white;
+}
+
+/* =================================
+   SPORT NAVY THEME
+================================= */
+
+/* Background halaman */
+body {
+    background: linear-gradient(
+        135deg,
+        #071b3a,
+        #0b2850,
+        #123e70
+    );
+    color: #ffffff;
+}
+
+/* Bagian katalog produk */
+.section {
+    background: linear-gradient(
+        135deg,
+        #071b3a,
+        #123e70,
+        #0b2850
+    );
+    color: #ffffff;
+}
+
+/* Judul dan deskripsi katalog */
+.section h2,
+.section p {
+    color: #ffffff;
+}
+
+/* Kotak produk */
+.product-card {
+    background: linear-gradient(
+        145deg,
+        #142f55,
+        #0b2040
+    );
+    color: #ffffff;
+    border: 1px solid #17618a;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Nama produk */
+.product-card h3 {
+    color: #ffffff;
+}
+
+/* Deskripsi produk */
+.product-card p {
+    color: #c5d9ee;
+}
+
+/* Harga produk */
+.product-card .price {
+    color: #20b8e8;
+}
+
+/* Bagian keunggulan */
+.features {
+    background: linear-gradient(
+        135deg,
+        #0b2040,
+        #123e70
+    );
+    color: #ffffff;
+}
+
+/* Kotak keunggulan */
+.feature-card {
+    background: #142f55;
+    color: #ffffff;
+    border: 1px solid #17618a;
+}
+
+/* Judul keunggulan */
+.feature-card h3 {
+    color: #20b8e8;
+}
+
+/* Deskripsi keunggulan */
+.feature-card p {
+    color: #d5e5f5;
+}
+
+/* SPLIT HERO */
+.hero-split {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    min-height: 600px;
+    background: #071b3a;
+}
+
+/* BAGIAN TEKS */
+.hero-text {
+    padding: 80px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-label {
+    color: #20b8e8;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero-text h1 {
+    color: white;
+    font-size: 48px;
+    line-height: 1.15;
+    margin: 20px 0;
+}
+
+.hero-text h1 span {
+    color: #20b8e8;
+}
+
+.hero-description {
+    color: #d5e5f5;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.btn-primary {
+    background: #20b8e8;
+    color: #071b3a;
+    padding: 15px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-secondary {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* BAGIAN GAMBAR */
+.hero-image {
+    background: linear-gradient(
+        135deg,
+        #123e70,
+        #087eb5,
+        #071b3a
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 35px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+}
+
+/* STATISTIK */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: #0b2040;
+    padding: 45px 8%;
+}
+
+.stat-item {
+    text-align: center;
+    border-right: 1px solid #315174;
+}
+
+.stat-item:last-child {
+    border-right: none;
+}
+
+.stat-item h2 {
+    color: #20b8e8;
+    font-size: 32px;
+}
+
+.stat-item p {
+    color: #d5e5f5;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero-split {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-text {
+        padding: 55px 8%;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-image img {
+        height: 350px;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .stat-item:nth-child(2) {
+        border-right: none;
+    }
+}
+
+/* ===== HALAMAN PRODUK ===== */
+
+.product-hero {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    min-height: 430px;
+    background: #080f1d;
+}
+
+.product-hero-text {
+    padding: 65px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-label {
+    color: #20b8e8;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.product-hero-text h1 {
+    color: white;
+    font-size: 42px;
+    line-height: 1.2;
+    margin: 18px 0;
+}
+
+.product-hero-text h1 span {
+    color: #20b8e8;
+}
+
+.product-hero-text > p:last-child {
+    color: #d5e5f5;
+    line-height: 1.8;
+}
+
+.product-hero-image {
+    background: linear-gradient(135deg, #123e70, #071b3a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.product-hero-image img {
+    width: 100%;
+    height: 380px;
+    object-fit: contain;
+}
+
+/* KATALOG */
+
+.catalog-section {
+    background: #e8f1fa;
+    padding: 75px 8%;
+}
+
+.catalog-heading {
+    margin-bottom: 35px;
+}
+
+.catalog-heading h2 {
+    color: #071b3a;
+    font-size: 38px;
+    margin: 12px 0;
+}
+
+.catalog-heading > div > p:last-child {
+    color: #52647a;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.catalog-card {
+    background: #0b2040;
+    border: 1px solid #29496e;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.catalog-card:hover {
+    transform: translateY(-6px);
+}
+
+.catalog-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    padding: 15px;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #123e70, #071b3a);
+}
+
+.catalog-info {
+    padding: 18px;
+}
+
+.catalog-info h3 {
+    color: white;
+    font-size: 17px;
+}
+
+.catalog-info p {
+    color: #c6d7e9;
+    line-height: 1.6;
+    min-height: 65px;
+}
+
+.catalog-info strong {
+    display: block;
+    color: #20b8e8;
+    font-size: 19px;
+    margin-top: 15px;
+}
+
+.catalog-note {
+    text-align: center;
+    color: #52647a;
+    margin-top: 30px;
+}
+
+.footer {
+    background: #071b3a;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.footer p {
+    color: #c6d7e9;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .product-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .product-hero-text h1 {
+        font-size: 32px;
+    }
+
+    .product-hero-image img {
+        height: 280px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .catalog-section {
+        padding: 45px 6%;
+    }
+}
+
+/* FONT HALAMAN KENZARO */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* Judul halaman */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 700;
+}
+
+/* Paragraf dan teks */
+p, a, button, li {
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* MENYAMAKAN FONT HALAMAN PRODUK DENGAN HOME */
+.product-hero,
+.product-hero * {
+    font-family: 'Poppins', Arial, sans-serif !important;
+}
+
+/* Judul utama halaman produk */
+.product-hero h1 {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+/* Tulisan kecil dan deskripsi */
+.product-hero p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+/* Judul katalog */
+.products-section,
+.products-section * {
+    font-family: 'Poppins', Arial, sans-serif !important;
+}
+/* PRODUCT HERO - SPORT NAVY */
+
+.product-hero {
+    width: 100%;
+    min-height: 430px;
+    background: linear-gradient(
+        120deg,
+        #071426,
+        #0b2850,
+        #123e70
+    );
+    display: flex;
+    align-items: center;
+    padding: 70px 9%;
+    box-sizing: border-box;
+}
+
+.product-hero-content {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.product-label {
+    color: #19b8ed;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+.product-hero h1 {
+    color: #ffffff;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: clamp(36px, 5vw, 60px);
+    font-weight: 800;
+    line-height: 1.15;
+    margin: 0 0 25px;
+}
+
+.product-hero h1 span {
+    color: #19b8ed;
+}
+
+.product-description {
+    color: #ffffff;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* NAVIGASI */
+
+.nav-menu a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: #19b8ed;
+}/* NAVBAR SPORT NAVY */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 6%;
+    background: #071426;
+}
+
+/* LOGO */
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white !important;
+    text-decoration: none !important;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.navbar .logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+/* MENU */
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu a,
+.nav-menu a:link,
+.nav-menu a:visited {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    font-size: 16px;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: #19b8ed !important;
+}
+
+.about-heading h1 span {
+    color: #19b8ed;
+}
+
+.about-heading p {
+    color: #19b8ed;
+}
+
+.team-initial {
+    background: #071426;
+    color: #19b8ed;
+}
+/* CERITA AWAL KENZARO */
+.story-section,
+.team-section {
+    padding: 70px 10%;
+    background: #0b1e3a;
+    color: white;
+}
+
+.story-content,
+.team-content {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section-label {
+    color: #19b8ed;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.story-section h2,
+.team-section h2 {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.story-section p,
+.team-section p {
+    color: #d5e4f5;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.team-card {
+    margin-top: 30px;
+    padding: 25px;
+    background: #12345a;
+    border-left: 5px solid #19b8ed;
+    border-radius: 10px;
+}
+
+.team-card h3 {
+    color: #19b8ed;
+    margin-bottom: 10px;
+}
